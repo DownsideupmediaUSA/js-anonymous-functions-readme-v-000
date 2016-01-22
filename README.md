@@ -15,7 +15,8 @@ give example of when would want to use an anonymous function. we know the why, k
 ## Calling
 
 ## instructions
-+ students should code along with tests
++ one or two practice problems that are different versions of examples given above. need to have tests
+
 
 ## Resources
 
