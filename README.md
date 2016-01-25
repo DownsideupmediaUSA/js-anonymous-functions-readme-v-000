@@ -18,6 +18,9 @@ most commonly used as argument to function -
 
 with `setTimeout`
 
+## Function Expression
+
+https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/ - at the bottom, have to deal with hoisting
 
 
 ## instructions
