@@ -4,28 +4,68 @@
 
 + Explain what an anonymous function is and why it's useful
 + Call an anonymous function
-+ 
 
 ## Intro
 
-it's annoying to define a function to only use once -takes up memory, extra typing, purpose of functions to make code resuable and we're not even planning to reuse that code. This is why we have anonymous functions - one and done.
+We know functions (like methods in Ruby) are used to bundle our code to be able to reuse again and again and again. So why take the time to define and store a function we never plan on reusing? It takes up memory, requires extra typing, and completely goes against the purpose of a function. Thankfully, JavaScript allows us to easily solve this problem by using an **anonymous function**. An anonymous function is one that is never defined and is planned on being used once. They allow us to execute a block of a code once. One and done.
 
-give example of when would want to use an anonymous function. we know the why, know the when.
 
 ## Usage
 
-most commonly used as argument to function - 
+One of the most common usage's for anonymous functions is a callback function (function passed as a parameter to another function).
 
-with `setTimeout`
+## Event Handler Callbacks
 
-## Function Expression
-
-https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/ - at the bottom, have to deal with hoisting
+We know that functions can accept functions as parameters. We've seen this time and time again when setting up jQuery event handlers. The `on` function accepts a string of the event you would like to bind, and a function which is executed when the event is trigged. But that function we pass as a parameter, it was never defined anywhere previously. That function does not have a name.
 
 
-## instructions
-+ one or two practice problems that are different versions of examples given above. need to have tests
+```js
+$('#submit').on('click', function(){
+  alert("form submitted!");
+});
+```
+
+The anonymous function (the callback function) in the example above simple creates an alert in the browser with the text `"form submitted!"`. This function is never executed on another part of the code. We only want it to fire when the submit button is clicked.
+
+### setTimeout
+
+The `setTimeout` function executes a code block after a specific amount of time has passed. This function accepts two parameters, a function and time in milliseconds. 
+
+```js
+setTimeout(function(){ console.log("I waited 5 seconds to execute");}, 5000)
+```
+
+The `setTimeout` function accepts the anonymous function as the first parameter. This anonymous function prints `"I waited 5 seconds to execute"` to the console.
+
+```js
+function(){ console.log("I waited 5 seconds to execute");}
+```
+
+
+### Function Expression
+
+We've seen function expressions already, but they can also be considered anonymous functions:
+
+```js
+var numberz = function() {
+    return 6+3;
+}
+
+//anonymous function because the function the variable is storing doesn't have a name
+
+var cats = function kitties() {
+    return "meow meow pow pow";
+}
+// not an anonymous function because the function as the name kitties
+```
+
+But wait, isn't part of the point of an anonymous function to take up less memory? How is that useful to just store the unnamed function in a variable. That seems like the same thing.
+
+Let's remember that variable declarations get hoisted to the top of their scope, but variable expressions do not. In the above example, `var numberz;` would get hoisted to the top of the scope, not the anonymous function it's storing. Therefore, at the top of the scope, the variable `numberz` is storing `undefined` and thus not taking up memory for the entire duration of the program.
 
 
 ## Resources
 
++ [JavaScript WE Blog](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
+
++ [Thoughtbot Blog](https://robots.thoughtbot.com/back-to-basics-anonymous-functions-and-closures)
