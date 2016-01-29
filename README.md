@@ -29,3 +29,5 @@ https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-funct
 
 ## Resources
 
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme' title='Anonymous Functions Readme'>Anonymous Functions Readme</a> on Learn.co and start learning to code for free.</p>
