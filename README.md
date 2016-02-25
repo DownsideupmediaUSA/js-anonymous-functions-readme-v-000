@@ -25,7 +25,7 @@ $('#submit').on('click', function(){
 });
 ```
 
-The anonymous function (the callback function) in the example above simple creates an alert in the browser with the text `"form submitted!"`. This function is never executed on another part of the code. We only want it to fire when the submit button is clicked.
+The anonymous function (the callback function) in the example above simply creates an alert in the browser with the text `"form submitted!"`. This function is never executed on another part of the code. We only want it to fire when the submit button is clicked.
 
 ### setTimeout
 
@@ -70,3 +70,5 @@ Let's remember that variable declarations get hoisted to the top of their scope,
 + [Thoughtbot Blog](https://robots.thoughtbot.com/back-to-basics-anonymous-functions-and-closures)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme' title='Anonymous Functions Readme'>Anonymous Functions Readme</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme'>Js Anonymous Functions</a> on Learn.co and start learning to code for free.</p>
