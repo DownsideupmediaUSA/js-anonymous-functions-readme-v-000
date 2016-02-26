@@ -56,7 +56,7 @@ var numberz = function() {
 var cats = function kitties() {
     return "meow meow pow pow";
 }
-// not an anonymous function because the function as the name kitties
+// not an anonymous function because the function has the name kitties
 ```
 
 But wait, isn't part of the point of an anonymous function to take up less memory? How is that useful to just store the unnamed function in a variable. That seems like the same thing.
@@ -70,3 +70,5 @@ Let's remember that variable declarations get hoisted to the top of their scope,
 + [Thoughtbot Blog](https://robots.thoughtbot.com/back-to-basics-anonymous-functions-and-closures)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme' title='Anonymous Functions Readme'>Anonymous Functions Readme</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme'>Js Anonymous Functions</a> on Learn.co and start learning to code for free.</p>
