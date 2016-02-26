@@ -25,7 +25,7 @@ $('#submit').on('click', function(){
 });
 ```
 
-The anonymous function (the callback function) in the example above simple creates an alert in the browser with the text `"form submitted!"`. This function is never executed on another part of the code. We only want it to fire when the submit button is clicked.
+The anonymous function (the callback function) in the example above simply creates an alert in the browser with the text `"form submitted!"`. This function is never executed on another part of the code. We only want it to fire when the submit button is clicked.
 
 ### setTimeout
 
