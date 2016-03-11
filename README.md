@@ -29,7 +29,7 @@ The anonymous function (the callback function) in the example above simply creat
 
 ### setTimeout
 
-The `setTimeout` function executes a code block after a specific amount of time has passed. This function accepts two parameters, a function and time in milliseconds. 
+The `setTimeout` function executes a code block after a specific amount of time has passed. This function accepts two parameters, a function and time in milliseconds.
 
 ```js
 setTimeout(function(){ console.log("I waited 5 seconds to execute");}, 5000)
@@ -59,10 +59,11 @@ var cats = function kitties() {
 // not an anonymous function because the function has the name kitties
 ```
 
-But wait, isn't part of the point of an anonymous function to take up less memory? How is that useful to just store the unnamed function in a variable. That seems like the same thing.
+Remember that variable declarations get hoisted to the top of their scope, but variable expressions do not. In the above example, `var numberz;` would get hoisted to the top of the scope, not the anonymous function it's storing. Therefore, at the top of the scope, the variable `numberz` is storing `undefined` and thus not taking up memory for the entire duration of the program.
 
-Let's remember that variable declarations get hoisted to the top of their scope, but variable expressions do not. In the above example, `var numberz;` would get hoisted to the top of the scope, not the anonymous function it's storing. Therefore, at the top of the scope, the variable `numberz` is storing `undefined` and thus not taking up memory for the entire duration of the program.
+## Postscript
 
+You might be thinking that you've seen something like these anonymous functions before — and you'd be right. Anonymous function are _sort of_ like Ruby blocks in that they provide a handy way to process incoming data but can't be called outside of their immediate context. Pretty cool, eh?
 
 ## Resources
 
