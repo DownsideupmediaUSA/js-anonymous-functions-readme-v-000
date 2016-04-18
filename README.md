@@ -59,7 +59,7 @@ var cats = function kitties() {
 // not an anonymous function because the function has the name kitties
 ```
 
-Remember that variable declarations get hoisted to the top of their scope, but variable expressions do not. In the above example, `var numberz;` would get hoisted to the top of the scope, not the anonymous function it's storing. Therefore, at the top of the scope, the variable `numberz` is storing `undefined` and thus not taking up memory for the entire duration of the program.
+Remember that function declarations get hoisted to the top of their scope, but function expressions do not. In the above example, `var numberz;` would get hoisted to the top of the scope, not the anonymous function it's storing. Therefore, at the top of the scope, the variable `numberz` is storing `undefined` and thus not taking up memory for the entire duration of the program.
 
 ## Postscript
 
