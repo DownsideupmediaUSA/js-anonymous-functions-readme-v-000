@@ -7,16 +7,16 @@
 
 ## Intro
 
-We know functions (like methods in Ruby) are used to bundle our code to be able to reuse again and again and again. So why take the time to define and store a function we never plan on reusing? It takes up memory, requires extra typing, and completely goes against the purpose of a function. Thankfully, JavaScript allows us to easily solve this problem by using an **anonymous function**. An anonymous function is one that is never defined and is planned on being used once. They allow us to execute a block of a code once. One and done.
+We know functions (like methods in Ruby) are used to bundle our code to be able to reuse again and again and again. So why take the time to define and store a function we never plan on reusing? It takes up memory, requires extra typing, and completely goes against the purpose of a function. Thankfully, JavaScript allows us to easily solve this problem by using an **anonymous function**. An anonymous function is one that is never defined and is planned on being used once. They allow us to execute a block of code once. One and done.
 
 
 ## Usage
 
-One of the most common usage's for anonymous functions is a callback function (function passed as a parameter to another function).
+One of the most common usages for anonymous functions is a callback function (a function passed as a parameter to another function).
 
 ## Event Handler Callbacks
 
-We know that functions can accept functions as parameters. We've seen this time and time again when setting up jQuery event handlers. The `on` function accepts a string of the event you would like to bind, and a function which is executed when the event is trigged. But that function we pass as a parameter, it was never defined anywhere previously. That function does not have a name.
+We know that functions can accept functions as parameters. We've seen this time and time again when setting up jQuery event handlers. The `on` function accepts a string of the event you would like to bind and a function that is executed when the event is triggered. But the function we pass as a parameter was never defined anywhere previously. That function does not have a name.
 
 
 ```js
@@ -25,7 +25,7 @@ $('#submit').on('click', function(){
 });
 ```
 
-The anonymous function (the callback function) in the example above simply creates an alert in the browser with the text `"form submitted!"`. This function is never executed on another part of the code. We only want it to fire when the submit button is clicked.
+The anonymous function (the callback function) in the example above simply creates an alert in the browser with the text `"form submitted!"`. This function is never executed in any other part of the code. We only want it to fire when the submit button is clicked.
 
 ### setTimeout
 
@@ -59,11 +59,11 @@ var cats = function kitties() {
 // not an anonymous function because the function has the name kitties
 ```
 
-Remember that function declarations get hoisted to the top of their scope, but function expressions do not. In the above example, `var numberz;` would get hoisted to the top of the scope, not the anonymous function it's storing. Therefore, at the top of the scope, the variable `numberz` is storing `undefined` and thus not taking up memory for the entire duration of the program.
+Remember that function declarations get hoisted to the top of their scope, but function expressions do not. In the above example, `var numberz;` would get hoisted to the top of the scope; the anonymous function it's storing would not. Therefore, at the top of the scope, the variable `numberz` is storing `undefined` and thus not taking up memory for the entire duration of the program.
 
 ## Postscript
 
-You might be thinking that you've seen something like these anonymous functions before — and you'd be right. Anonymous function are _sort of_ like Ruby blocks in that they provide a handy way to process incoming data but can't be called outside of their immediate context. Pretty cool, eh?
+You might be thinking that you've seen something like these anonymous functions before — and you'd be right. Anonymous functions are _sort of_ like Ruby blocks in that they provide a handy way to process incoming data but can't be called outside of their immediate context. Pretty cool, eh?
 
 ## Resources
 
@@ -71,5 +71,3 @@ You might be thinking that you've seen something like these anonymous functions 
 + [Thoughtbot Blog](https://robots.thoughtbot.com/back-to-basics-anonymous-functions-and-closures)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme' title='Anonymous Functions Readme'>Anonymous Functions Readme</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme'>Js Anonymous Functions</a> on Learn.co and start learning to code for free.</p>
