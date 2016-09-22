@@ -1,4 +1,4 @@
-# Anonymous Functions Readme
+# Js Anonymous Functions
 
 ## Objectives
 
@@ -70,4 +70,4 @@ You might be thinking that you've seen something like these anonymous functions 
 + [JavaScript WE Blog](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
 + [Thoughtbot Blog](https://robots.thoughtbot.com/back-to-basics-anonymous-functions-and-closures)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme' title='Anonymous Functions Readme'>Anonymous Functions Readme</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-anonymous-functions-readme' title='Js Anonymous Functions'>Js Anonymous Functions</a> on Learn.co and start learning to code for free.</p>
